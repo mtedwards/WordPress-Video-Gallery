@@ -39,7 +39,7 @@ function get_youtube_details($video_url) {
 		$video_url = str_replace("http","https",$video_url);
 	}
 	$you_check = strpos($video_url, 'youtube');
-	if ($you_check === 'false') {
+	if ($you_check === false) {
 		$videoId =  str_replace("https://youtu.be/","",$video_url);
 	} else {
 		$videoId =  str_replace("https://www.youtube.com/watch?v=","",$video_url);
